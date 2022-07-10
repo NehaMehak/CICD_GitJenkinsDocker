@@ -4,7 +4,6 @@ RUN apt-get install python3 -y
 RUN apt-get install python3-pip -y 
 RUN mkdir /app
 WORKDIR /app
-
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 COPY . .
